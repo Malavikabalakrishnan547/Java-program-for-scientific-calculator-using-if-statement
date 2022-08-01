@@ -1,0 +1,84 @@
+import java.util.Scanner;
+
+public class sciencalu {
+
+    public static void main(String args[]) {
+        Scanner s = new Scanner(System.in);
+
+        double a, b, c, x, y, z;
+        char ch = 0;
+
+        System.out.println("choose the operator(+:add,-sub,*:mul,/:div,s:sin function,c:cos,t:tan,q:square root,p:power)");
+        ch = s.next().charAt(0);
+
+        if (ch == '+') {
+            System.out.println("enter your first number:");
+            x = s.nextInt();
+            System.out.println("enter your second number:");
+            y = s.nextInt();
+            z = x + y;
+            System.out.println("The result is:" + z);
+        }
+        if (ch == '-') {
+            System.out.println("enter your first number:");
+            x = s.nextInt();
+            System.out.println("enter your second number:");
+            y = s.nextInt();
+            z = x - y;
+            System.out.println("The result is:" + z);
+        }
+        if (ch == '*') {
+            System.out.println("enter your first number:");
+            x = s.nextInt();
+            System.out.println("enter your second number:");
+            y = s.nextInt();
+            z = x * y;
+            System.out.println("The result is:" + z);
+        }
+        if (ch == '/') {
+            System.out.println("enter your first number:");
+            x = s.nextInt();
+            System.out.println("enter your second number:");
+            y = s.nextInt();
+            z = x / y;
+            System.out.println("The result is:" + z);
+
+        }
+        if (ch == 's') {
+            System.out.println("enter the number");
+            b = s.nextDouble();
+            a = Math.sin(b);
+            System.out.println("The result is:" + a);
+
+        }
+
+        if (ch == 'c') {
+            System.out.println("enter the number");
+            b = s.nextDouble();
+            a = Math.cos(b);
+            System.out.println("The result is:" + a);
+        }
+
+        if (ch == 't') {
+            System.out.println("enter the number");
+            b = s.nextDouble();
+            a = Math.tan(b);
+            System.out.println("The result is:" + a);
+        }
+
+        if (ch == 'q') {
+            System.out.println("enter the number");
+            b = s.nextDouble();
+            a = Math.sqrt(b);
+            System.out.println("The result is:" + a);
+        }
+
+        if (ch == 'p') {
+            System.out.println("enter the number");
+            b = s.nextDouble();
+            a = Math.pow(b, b);
+            System.out.println("The result is:" + a);
+        }
+
+    }
+}
